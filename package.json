@@ -1,0 +1,24 @@
+{
+  "name": "parisevents",
+  "version": "1.0.0",
+  "description": "Projet 2 - EMM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaJovinac/ParisEvents.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreaJovinac/ParisEvents/issues"
+  },
+  "homepage": "https://github.com/AndreaJovinac/ParisEvents#readme",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0"
+  }
+}
