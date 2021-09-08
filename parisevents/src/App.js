@@ -34,9 +34,6 @@ function App () {
             <Route path="/Favoris">
               <Favoris />
             </Route>
-            <Route path="/Events">
-              <Events />
-            </Route>
             <Route path="/Details">
               <Details />
             </Route>

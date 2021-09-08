@@ -8,5 +8,13 @@
 
 .imgFond {
     background-color: #D8D8D8;
-    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.descrip:after {
+    content: "<p class="">";
+    color: white;
+    
+  }
+    

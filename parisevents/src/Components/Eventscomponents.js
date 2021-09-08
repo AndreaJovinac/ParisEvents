@@ -1,24 +1,31 @@
 import React, {useState} from 'react';
 import './Eventscomponents.css';
 import logo from '../Img/img.jpg';
+import {Link} from 'react-router-dom';
+//import Details from './Vue/Details'; 
 
 
 function Eventscomponents({toto}) {
     return (
-      <div className="container">
-            <div className="imgFond">
-              <img src={logo} width="30%" alt="img" />
+      <ul className="menu">
+        <li className="event">
+          <Link to="/Details">
+            <div className="container">
+                  <div className="imgFond" style={{ backgroundImage: `url(${toto.cover_url})`}}> 
+                  </div>
+                  <p>ID : {toto.id}.</p>
+                    <h3> {toto.title}</h3>
+                    <p> {toto.date_description}</p>
+                    <p className="descrip"> {toto.description} </p>
+                    <button>Mettre en Favoris</button>
+                    <button >Retirer en Favoris</button>
+                    <button > En savoir plus</button>
             </div>
-              <h3> {toto.title}</h3>
-              <p> {toto.date_start}</p>
-              <p> {toto.description}</p>
-              <button>Mettre en Favoris</button>
-              <button >Retirer en Favoris</button>
-      </div>
+          </Link>
+        </li>
+      </ul>
   );
   }
-
-
 
 export default Eventscomponents;
 
