@@ -7,6 +7,7 @@ import Search from './Vue/Search';
 import Events from './Vue/Events';
 import Favoris from './Vue/Favoris';
 import Details from './Vue/Details'; 
+import Footer from './Components/Footer';
 
 import {
   BrowserRouter as Router, Switch, Route,
@@ -25,26 +26,26 @@ function App () {
     })*/
   return (
     <div className="App">
-      <Router>
-      <Navbar />
-          <Switch>
-            <Route path="/Search">
-              <Search />
-            </Route>
-            <Route path="/Favoris">
-              <Favoris />
-            </Route>
-            <Route path="/Details">
-              <Details />
-            </Route>
-            <Route path="/">
-              <Accueil />
-            </Route>
-          </Switch>
-      </Router>
-      <Fragment>
-         
-      </Fragment>
+      
+          <Router>
+              <Navbar />
+                  <Switch>
+                      <Route path="/Search">
+                        <Search />
+                      </Route>
+                      <Route path="/Favoris">
+                        <Favoris />
+                      </Route>
+                      <Route path="/Details">
+                        <Details />
+                      </Route>
+                      <Route path="/">
+                        <Accueil />
+                      </Route>
+                    </Switch>
+            </Router>
+       
+      <Footer/>
     </div>
   );
 }

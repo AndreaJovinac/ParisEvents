@@ -37,6 +37,7 @@ nav {
 }
 a {
     text-decoration: none;
+    font-size: 16px;
 }
 a > .active {
     border-bottom: 3px solid #FC7E68;
@@ -48,7 +49,7 @@ a > .active {
     color : #707070;
     cursor: pointer;
     text-decoration: none;
-
+    
     height: 20px;
 }
 
