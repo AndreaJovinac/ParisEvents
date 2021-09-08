@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from './logo-paris.png';
+import logo from '../Img/logo-paris.png';
+import Eventscomponents from '../Components/Eventscomponents';
 
 class Favoris extends React.Component {
     loadevent(){
@@ -14,7 +15,7 @@ class Favoris extends React.Component {
         <img src={logo} height="70" className="App-logo" alt="logo" />
         <h1> Favoris</h1>
         <p>Ce que l'utilisateur a sélectionné de doux</p>
-       
+       <Eventscomponents/>
         
         
       </div>

@@ -1,12 +1,12 @@
 import React, {Fragment, useState, useEffect} from 'react';
 import axios from 'axios';
 import './App.css';
-import Accueil from './Accueil.js';
-import Navbar from './Navbar.js';
-import Search from './Search.js';
-import Events from './Events.js';
-import Favoris from './Favoris.js';
-import Details from './Details.js'; 
+import Accueil from './Vue/Accueil';
+import Navbar from './Components/Navbar';
+import Search from './Vue/Search';
+import Events from './Vue/Events';
+import Favoris from './Vue/Favoris';
+import Details from './Vue/Details'; 
 
 import {
   BrowserRouter as Router, Switch, Route,

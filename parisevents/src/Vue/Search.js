@@ -1,5 +1,6 @@
 import React from 'react';
-import logo from './logo-paris.png';
+import logo from '../Img/logo-paris.png';
+import '../Vue/search.css';
 
 
 class Search extends React.Component {
@@ -14,7 +15,8 @@ class Search extends React.Component {
   render() {
     return (
       <div className="App">
-      <img src={logo} height="70" className="App-logo" alt="logo" />
+
+      <img src={logo} height="70" alt="Logo" />
       <h1> Search</h1>
       <p>Barre de recherche</p>
       <input/>

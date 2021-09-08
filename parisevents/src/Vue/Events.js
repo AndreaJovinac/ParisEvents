@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo-paris.png';
+import logo from '../Img/logo-paris.png';
 
 class Events extends React.Component {
   loadevent(){
