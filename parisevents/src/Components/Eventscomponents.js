@@ -14,8 +14,9 @@ function Eventscomponents({toto, onOpenModal}) {
                   </div>
                   <p>ID : {toto.id}.</p>
                     <h3> {toto.title}</h3>
-                    <p> {toto.date_description}</p>
-                    <p className="descrip"> {toto.description} </p>
+                    {/* <p dangerouslySetInnerHTML {{__html: toto.date_description}}> </p> */}
+                    <p dangerouslySetInnerHTML={{ __html: toto.description }}></p>
+                    
                     <button>Mettre en Favoris</button>
                     <button >Retirer en Favoris</button>
                     <button > En savoir plus</button>
