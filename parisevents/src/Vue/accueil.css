@@ -47,9 +47,10 @@ button {
 
 }
 .actu {
-    width: 1118px;
+    max-width: 1118px;
     display: flex;
   justify-content: center;
+  margin: auto;
 }
 
 figure {

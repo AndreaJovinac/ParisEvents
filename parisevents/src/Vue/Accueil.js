@@ -60,7 +60,7 @@ Then va nous sortir le résultat */
                 { event_ && <Eventscomponents toto={event_} onOpenModal={ openModal } /> } 
               </div>
             </div> 
-            { displayModal && <Eventsdetail toto={event_id} onCloseModal={ closeModal } /> /* if displaymodal s'affiche alors*/}
+            { displayModal && <Eventsdetail toto={event_id, event_} onCloseModal={ closeModal } /> /* if displaymodal s'affiche alors*/}
             {/*https://opendata.paris.fr/api/v2/catalog/datasets/que-faire-a-paris-/records/08de0bed488e150320eeef8e86b3e5502e33cd2b */}
         </section>
 

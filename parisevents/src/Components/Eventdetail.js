@@ -2,13 +2,13 @@ import React, {useState} from 'react';
 import '../Components/Eventdetail.css';
 
 
-function Eventdetail({toto}) {
+function Eventdetail({toto, onOpenModal}) {
     return (
         <div className="Container">
             <div className="imgFond" style={{ backgroundImage: `url(${toto.cover_url})`}}> 
                   </div>
                   <button onClick="" ></button>
-                    <h3> {toto.title}fff</h3>
+                    <h3> {toto.title}</h3>
                     <p> {toto.date_description}</p>
                     <p className="descrip"> {toto.description} </p>
                     <p> adresse : {toto.address_name} {toto.address_street} {toto.address_zipcode} {toto.address_city}</p>
