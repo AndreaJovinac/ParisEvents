@@ -7,7 +7,7 @@ function Eventdetail({toto, onCloseModal}) {
         <div className="Container">
             <div className="imgFond" style={{ backgroundImage: `url(${toto.cover_url})`}}> 
                   </div>
-                  <button onClick={onCloseModal} ></button>
+                  <button onClick={onCloseModal} >X Fermer</button>
                     <h3> {toto.title}</h3>
                     <p> {toto.date_description}</p>
                     <p className="descrip"> {toto.description} </p>

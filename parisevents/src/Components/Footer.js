@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Components/Footer';
+import '../Components/Footer.css';
 
 function Footer() {
 return (
@@ -7,7 +7,7 @@ return (
 
     <footer className="footer">
           <section className="content">
-              <p>© copyright - 2021</p>
+              <p>© 2021 Copyright - Réalisé par Andréa JOVINAC</p>
             </section>
             
     </footer>

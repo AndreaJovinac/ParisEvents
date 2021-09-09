@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Eventscomponents from '../Components/Eventscomponents';
 import Eventsdetail from '../Components/Eventdetail';
+import {NavLink} from 'react-router-dom';
 import logo from '../Img/logo-paris.png';
 import img from '../Img/img.banniere.svg';
 import './accueil.css';
@@ -18,7 +19,7 @@ Then va nous sortir le résultat */
     fetch('https://opendata.paris.fr/api/v2/catalog/datasets/que-faire-a-paris-/records?order_by=date_end%20asc&limit=10&pretty=false&timezone=UTC')
     
     /* La méthode then() renvoie un objet Promise. Elle peut prendre jusqu'à deux arguments qui sont deux fonctions callback à utiliser en cas de complétion ou d'échec de la Promise. */
-     .then(response=>response.json()) 
+    .then(response=>response.json()) 
     .then(result=>{
     //   /* console.log(result.records[0].record.id); */
       console.log(result.records[0].record.fields); /* C'est juste pour tester si ça fonctionne bien */
@@ -48,8 +49,11 @@ Then va nous sortir le résultat */
               </figure>
               <article>
                 <h1> Découvrez vos événements exceptionnels et sensationnels </h1>
-                <h6> L'application qui permet de voir tous les événements parisiens</h6>
-                <button> En savoir plus</button>
+                <h6> L'application qui permet de consulter tous les événements parisiens</h6>
+                <NavLink to="/Search">
+                  <button> Faire une recherche</button>
+                </NavLink>
+                
               </article>
             </div>
           </section>

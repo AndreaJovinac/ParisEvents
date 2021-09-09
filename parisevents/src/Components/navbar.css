@@ -29,10 +29,10 @@ nav {
 }
 .menu {
     list-style-type: none;
-    height: 100%;
+    
     display: flex;
     align-content: flex-start;
-    align-items: center;
+    margin-top: 40px;
     position: relative;
     column-gap: 60px;
 }
@@ -42,21 +42,19 @@ a {
 }
 .active {
     border-bottom: 3px solid #FC7E68;
-    color: #FC7E68;
-    font-weight: 600;
+    color: #FC7E68 !important;
+}
+
+.active > li{
+    color: #FC7E68 !important;
 }
 
 .items {
     color : #707070;
     cursor: pointer;
     text-decoration: none;
-    
+    padding-bottom: 38px;
     height: 20px;
-}
-
-.items:hover {
-    border-bottom: 3px solid #FC7E68;
-    
 }
 
 ul {

@@ -30,7 +30,7 @@ function Navbar() {
                             <li className="items">Rechecher un événement</li>
                         </NavLink>
                         <NavLink to="/Favoris">
-                            <li className="items"> Vos Favoris</li>
+                            <li className="items"> Vos favoris</li>
                         </NavLink>
                     </ul>
                 </nav>
