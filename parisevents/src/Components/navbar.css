@@ -39,7 +39,7 @@ a {
     text-decoration: none;
     font-size: 16px;
 }
-a > .active {
+.active {
     border-bottom: 3px solid #FC7E68;
     color: #FC7E68;
     font-weight: 600;

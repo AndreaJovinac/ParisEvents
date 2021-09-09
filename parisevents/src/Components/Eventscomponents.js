@@ -5,11 +5,10 @@ import {Link} from 'react-router-dom';
 //import Details from './Vue/Details'; 
 
 
-function Eventscomponents({toto}) {
+function Eventscomponents({toto, onOpenModal}) {
     return (
       <ul className="menu">
-        <li className="event">
-          <Link to="/Details">
+        <li className="event" onClick={onOpenModal}> 
             <div className="container">
                   <div className="imgFond" style={{ backgroundImage: `url(${toto.cover_url})`}}> 
                   </div>
@@ -21,7 +20,6 @@ function Eventscomponents({toto}) {
                     <button >Retirer en Favoris</button>
                     <button > En savoir plus</button>
             </div>
-          </Link>
         </li>
       </ul>
   );

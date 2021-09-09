@@ -1,9 +1,20 @@
 import React from 'react';
 import '../Components/navbar.css';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import logo from '../Img/logo.parisevent.svg';
 
+
+
 function Navbar() {
+   /* function active() {
+        const activation = document.getElementById('test');
+        if (<Link to="/"/>) {
+           return  activation.className = 'active'  
+        }  
+           return activation.className = ''
+    }
+    active();*/
+
     return (
         <header>
             <div className="content_header">
@@ -12,19 +23,20 @@ function Navbar() {
                 </div>
                 <nav>
                     <ul className="menu">
-                        <Link to="/">
-                            <li className="items active">Accueil</li>
-                        </Link>
-                        <Link to="/Search">
+                        <NavLink to="/">
+                            <li className="items ">Accueil</li>
+                        </NavLink>
+                        <NavLink to="/Search">
                             <li className="items">Rechecher un événement</li>
-                        </Link>
-                        <Link to="/Favoris">
+                        </NavLink>
+                        <NavLink to="/Favoris">
                             <li className="items"> Vos Favoris</li>
-                        </Link>
+                        </NavLink>
                     </ul>
                 </nav>
             </div>
         </header>
+        
     )
 }
 
