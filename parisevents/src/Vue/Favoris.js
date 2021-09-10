@@ -9,7 +9,7 @@ class Favoris extends React.Component {
         <div className="App">
         <h1> Favoris</h1>
         <p>Ce que l'utilisateur a sélectionné de doux</p>
- 
+        <Eventscomponents/>
       </div>
     );
     }

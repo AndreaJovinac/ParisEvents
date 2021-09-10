@@ -1,12 +1,39 @@
-.container {
-    border : 1px solid #D8D8D8;
-    width: 30%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+.container {
+    border : 1px solid #F2F4F6;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
 
 .imgEvent {
     height: 282px;
     background-size: cover;
     background-position: center center;
     width: 507px;
+}
+.contentEvent {
+    width: 50%;
+    padding: 30px;
+    text-align: left;
+}
+.contentEvent p {
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+    line-height: 23px;
+
+}
+.buttonEvent {
+    margin: 0;
+    font-size: 12px;
+}
+
+time {
+    background-color: #879494;
+    color: white;
+    padding: 3px 6px 3px 6px;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
 }

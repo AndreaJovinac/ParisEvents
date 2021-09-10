@@ -61,20 +61,13 @@ Then va nous sortir le résultat */
               <div className="content_actu">
                 <h2> Vos dernières actualités</h2>
                 <hr/>
-                { event_ && <Eventscomponents toto={event_} onOpenModal={ openModal } /> } 
+                { event_ && <Eventscomponents evenement={event_} onOpenModal={ openModal } /> } 
               </div>
             </div> 
-            { displayModal && <Eventsdetail toto={event_id, event_} onCloseModal={ closeModal } /> /* if displaymodal s'affiche alors*/}
+            { displayModal && <Eventsdetail evenement={event_id, event_} onCloseModal={ closeModal } /> /* if displaymodal s'affiche alors*/}
             {/*https://opendata.paris.fr/api/v2/catalog/datasets/que-faire-a-paris-/records/08de0bed488e150320eeef8e86b3e5502e33cd2b */}
         </section>
-
-
-
-
     );
     }
 
-  
-
-  
   export default Accueil;

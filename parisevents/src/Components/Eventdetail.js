@@ -2,19 +2,19 @@ import React, {useState} from 'react';
 import '../Components/Eventdetail.css';
 
 
-function Eventdetail({toto, onCloseModal}) {
+function Eventdetail({evenement, onCloseModal}) {
     return (
         <div className="Container">
-            <div className="imgFond" style={{ backgroundImage: `url(${toto.cover_url})`}}> 
+            <div className="imgFond" style={{ backgroundImage: `url(${evenement.cover_url})`}}> 
                   </div>
                   <button onClick={onCloseModal} >X Fermer</button>
-                    <h3> {toto.title}</h3>
-                    <p> {toto.date_description}</p>
-                    <p className="descrip"> {toto.description} </p>
-                    <p> adresse : {toto.address_name} {toto.address_street} {toto.address_zipcode} {toto.address_city}</p>
-                    <p> prix : {toto.price_type}</p>
-                    <p> map : {toto.transport}</p>
-                    <p> contact : {toto.contact_mail}, {toto.contact_facebook} </p>
+                    <h3> {evenement.title}</h3>
+                    <p> {evenement.date_description}</p>
+                    <p className="descrip"> {evenement.description} </p>
+                    <p> adresse : {evenement.address_name} {evenement.address_street} {evenement.address_zipcode} {evenement.address_city}</p>
+                    <p> prix : {evenement.price_type}</p>
+                    <p> map : {evenement.transport}</p>
+                    <p> contact : {evenement.contact_mail}, {evenement.contact_facebook} </p>
                     <button >Sauvegarder</button>
                     <button > Retirer des favoris</button>
                     

@@ -5,21 +5,20 @@ import {Link} from 'react-router-dom';
 //import Details from './Vue/Details'; 
 
 
-function Eventscomponents({toto, onOpenModal}) {
+function Eventscomponents({evenement, onOpenModal}) {
     return (
       <ul className="menu">
         <li className="event" onClick={onOpenModal}> 
             <div className="container">
-                  <div className="imgEvent" style={{ backgroundImage: `url(${toto.cover_url})`}}> 
+                  <div className="imgEvent" style={{ backgroundImage: `url(${evenement.cover_url})`}}> 
                   </div>
                   <div className="contentEvent">
-                    <time>={toto.date_start}</time>
-                    <h3 dangerouslySetInnerHTML={{ __html: toto.title }}></h3>
-                      <p dangerouslySetInnerHTML={{ __html: toto.description }}></p>
+                    <time>{evenement.date_start}</time>
+                    <h3 dangerouslySetInnerHTML={{ __html: evenement.title }}></h3>
+                      <p dangerouslySetInnerHTML={{ __html: evenement.description }}></p>
                       {/* dangerouslySetInnerHTML permet de retirer tous les caractères speciaux dans une chaine de caractère */}
-                    <button>Mettre en Favoris</button>
-                    <button >Retirer en Favoris</button>
-                    <button > En savoir plus</button>
+                    <button className="buttonEvent"> + Ajouter en favoris</button>
+                    <button className="buttonEvent"> - Retirer en favoris</button>
                   </div>
             </div>
         </li>

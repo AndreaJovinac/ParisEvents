@@ -27,7 +27,7 @@ function Details() {
             <p>Voici les détails d'un events</p>
             <div className="actu"> 
             </div> 
-            { event_ && <Eventdetail toto={event_} /> }
+            { event_ && <Eventdetail evenement={event_} /> }
             
         </div>
     );
