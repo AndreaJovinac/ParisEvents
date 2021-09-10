@@ -42,11 +42,11 @@ function Search() {
           setEvent_id(event_id_)})
 }, [donnees]); // fin useEffect
 
-const openModal = () => { 
+const openModal = () => { /* Ouvrir une modal tu mets à vrai */
   console.log(event_id);
   setDisplayModal(true) 
 }
-const closeModal = () => { 
+const closeModal = () => { /* Fermer une modal tu mets à faux */
   setDisplayModal(false) 
 }
    /* On teste  */

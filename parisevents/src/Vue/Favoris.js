@@ -2,18 +2,14 @@ import React from 'react';
 import logo from '../Img/logo-paris.png';
 import Eventscomponents from '../Components/Eventscomponents';
 
-class Favoris extends React.Component {
-    
-    render() {
+function Favoris () {
+
       return (
         <div className="App">
         <h1> Favoris</h1>
-        <p>Ce que l'utilisateur a sélectionné de doux</p>
-        <Eventscomponents/>
+        <p>Vous n'avez pas encore de favoris</p>
       </div>
     );
-    }
-  
   }
   
   export default Favoris;
