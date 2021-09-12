@@ -1,13 +1,18 @@
 import React from 'react';
 import logo from '../Img/logo-paris.png';
-import Eventscomponents from '../Components/Eventscomponents';
+import '../Vue/favoris.css';
 
 function Favoris () {
 
       return (
         <div className="App">
-        <h1> Favoris</h1>
-        <p>Vous n'avez pas encore de favoris</p>
+          <section className="bandeau">
+            <h1> Favoris</h1>
+            <h6> Les événements que vous aimez</h6>
+          </section>
+          <div className="container">
+             
+          </div>
       </div>
     );
   }

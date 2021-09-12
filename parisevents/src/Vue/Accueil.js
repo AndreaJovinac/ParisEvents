@@ -48,6 +48,7 @@ Then va nous sortir le résultat */
                 <img src={img} alt=""/>
               </figure>
               <article>
+                <h6 class="bnvenu"> Bienvenue à Paris Events </h6>
                 <h1> Découvrez vos événements exceptionnels et sensationnels </h1>
                 <h6> L'application qui permet de consulter tous les événements parisiens</h6>
                 <NavLink to="/Search">

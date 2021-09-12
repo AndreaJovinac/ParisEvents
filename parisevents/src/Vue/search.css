@@ -4,5 +4,24 @@
 }
 .bandeau {
     background-color: #F2F4F7;
-    height: 200px;
+    height: 150px;
+    padding-top: 40px;
+}
+
+input {
+    border-radius: 30px;
+    width: 30%;
+    border: none;
+    height: 38px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 0px 0px 0px 12px;
+}
+.btnSearch {
+    margin-left: 0px !important;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    font-size: 14px;
+    padding-bottom: 12px;
+    padding-top: 9px;
 }

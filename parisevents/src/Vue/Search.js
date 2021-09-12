@@ -12,18 +12,16 @@ function Search() {
   Souvent, les effets de bord créent des ressources qui nécessitent d’être nettoyées avant que le composant ne quitte l’écran, telles qu’un abonnement ou l’ID d’une horloge. 
   Pour ce faire, la fonction fournie à useEffect peut renvoyer une fonction de nettoyage. Par exemple, pour créer un abonnement :
   */
-
   const [datas, setDatas] = useState([]);
   const [donnees, setDonnees] = useState("");
   const Lienapi = "https://opendata.paris.fr/api/v2/catalog/datasets/que-faire-a-paris-/records?search=";
-
   const [event_,setEvent_] = useState(null) /* Valeur par défaut et setEvent c'est la valeur que l'on change à chaque fois - UseState qui permet de mettre à jour la valeur à chaque fois*/
   const [event_id,setEvent_id] = useState(null)
   const [displayModal,setDisplayModal] = useState(false)
 
 /* Recuperer les données du input */
-
   const donneesinput = (e) => {
+
     let value = e.target.value;
     setDonnees(value);
   }
@@ -53,21 +51,24 @@ const closeModal = () => { /* Fermer une modal tu mets à faux */
   console.log(datas);
 
 
+ 
 
     return (
       <div className="App">
           <section className="bandeau">
-            <h1> Rechercher</h1>
-            <label for="name">Tapez votre mot de recherche</label>
-              <input type="text" id="name"  placeholder="Tapez votre mot" onInput={donneesinput}/>
-              <button onClick="">Rechercher</button>
+            <h1> Rechercher un événement</h1>
+            <form>
+              <input type="text" id="name"  placeholder="Tapez votre mot de recherche" onInput={donneesinput}/>
+              <button type="submit" id="" className="btnSearch" onClick="" >Rechercher </button>
+            </form>
+              
           </section>
 
           <div className="search-result-container">
-              { datas && datas.map((event) => (
-                  <Eventscomponents key={ event.record.id }    id={ event.record.id }    evenement={ event.record.fields } onOpenModal={openModal}/>
+              {datas && datas.map((event) => (
+                  <Eventscomponents key={event.record.id} id={event.record.id} evenement={event_id, event_, event.record.fields} onOpenModal={openModal}/>
               ))}
-          { displayModal && <Eventsdetail evenement={event_id, event_} onCloseModal={ closeModal }/> }
+              {displayModal && <Eventsdetail evenement={event_id, event_} onCloseModal={closeModal}/>}
           </div>
       </div>
   );

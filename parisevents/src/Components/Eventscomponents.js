@@ -15,7 +15,7 @@ function Eventscomponents({evenement, onOpenModal}) {
                   <div className="contentEvent">
                     <time>{evenement.date_start}</time>
                     <h3 dangerouslySetInnerHTML={{ __html: evenement.title }}></h3>
-                      <p dangerouslySetInnerHTML={{ __html: evenement.description }}></p>
+                      <p maxlength="4" dangerouslySetInnerHTML={{ __html: evenement.description }}></p>
                       {/* dangerouslySetInnerHTML permet de retirer tous les caractères speciaux dans une chaine de caractère */}
                     <button className="buttonEvent"> + Ajouter en favoris</button>
                     <button className="buttonEvent"> - Retirer en favoris</button>
