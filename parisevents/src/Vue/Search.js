@@ -29,26 +29,27 @@ function Search() {
   /* On teste  */
   console.log(donnees);
   
-  useEffect(() => {
+  function reload(){
     fetch(Lienapi+donnees)
-        .then(response => response.json())
-        .then(result => {
-          setDatas(result.records)
-          const event_ = result.records[0].record.fields;
-          const event_id_ = result.records[0].record.id;
-          setEvent_(event_)
-          setEvent_id(event_id_)})
-}, [donnees]); // fin useEffect
-
-const openModal = () => { /* Ouvrir une modal tu mets à vrai */
-  console.log(event_id);
-  setDisplayModal(true) 
-}
-const closeModal = () => { /* Fermer une modal tu mets à faux */
-  setDisplayModal(false) 
-}
-   /* On teste  */
-  console.log(datas);
+          .then(response => response.json())
+          .then(result => {
+            setDatas(result.records)
+            const event_ = result.records[0].record.fields;
+            const event_id_ = result.records[0].record.id;
+            setEvent_(event_)
+            setEvent_id(event_id_)})
+  console.log('gfdg')
+  }
+  const openModal = () => { /* Ouvrir une modal tu mets à vrai */
+    console.log(event_id);
+    setDisplayModal(true) 
+  }
+  const closeModal = () => { /*Fermer une modal tu mets à faux */
+    setDisplayModal(false) 
+  }
+     /* On teste  */
+    // console.log(datas);
+  
 
 
  
@@ -57,14 +58,17 @@ const closeModal = () => { /* Fermer une modal tu mets à faux */
       <div className="App">
           <section className="bandeau">
             <h1> Rechercher un événement</h1>
-            <form>
+            
               <input type="text" id="name"  placeholder="Tapez votre mot de recherche" onInput={donneesinput}/>
-              <button type="submit" id="" className="btnSearch" onClick="" >Rechercher </button>
-            </form>
+              <button type="submit" id="" className="btnSearch" onClick={reload} >Rechercher </button>
+
               
           </section>
 
           <div className="search-result-container">
+          <h2> Résultat de votre recherche</h2>
+                <hr/>
+                
               {datas && datas.map((event) => (
                   <Eventscomponents key={event.record.id} id={event.record.id} evenement={event_id, event_, event.record.fields} onOpenModal={openModal}/>
               ))}

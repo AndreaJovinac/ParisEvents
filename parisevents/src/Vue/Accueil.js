@@ -18,6 +18,7 @@ Then va nous sortir le résultat */
   useEffect(() => { /* C'est une fonction dans une fontion qui prends en paramètre fetch et ses then */
     fetch('https://opendata.paris.fr/api/v2/catalog/datasets/que-faire-a-paris-/records?order_by=date_end%20asc&limit=10&pretty=false&timezone=UTC')
     
+    
     /* La méthode then() renvoie un objet Promise. Elle peut prendre jusqu'à deux arguments qui sont deux fonctions callback à utiliser en cas de complétion ou d'échec de la Promise. */
     .then(response=>response.json()) 
     .then(result=>{

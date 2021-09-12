@@ -7,9 +7,14 @@
     margin-bottom: 30px;
     border-radius: 5px;
 }
+.event {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
 
 .imgEvent {
-    height: 282px;
+    height: 300px;
     background-size: cover;
     background-position: center center;
     width: 507px;
@@ -28,6 +33,7 @@
 .buttonEvent {
     margin: 0;
     font-size: 12px;
+    margin-right: 10px;
 }
 
 time {
@@ -36,4 +42,9 @@ time {
     padding: 3px 6px 3px 6px;
     font-size: 12px;
     font-family: 'Lato', sans-serif;
+}
+
+.containersection {
+    width: 1118px;
+    margin: auto;
 }

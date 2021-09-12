@@ -8,7 +8,7 @@ function Eventdetail({evenement, onCloseModal}) {
     <div className="container">
         <div className="overlay"></div>
         <div className="Container-Modal">
-            <button className="btn-close" onClick={onCloseModal} ><img className="cross" src={cross} height="10px" alt=""/>
+            <button className="btn-close" onClick={onCloseModal}><img className="cross" src={cross} height="10px" alt=""/>
              Fermer </button>
             <div className="imgDetail" style={{ backgroundImage: `url(${evenement.cover_url})`}}> 
             </div>
