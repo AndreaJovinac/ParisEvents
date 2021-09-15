@@ -3,7 +3,6 @@
 .container {
     border : 1px solid #F2F4F6;
     display: flex;
-    align-items: center;
     margin-bottom: 30px;
     border-radius: 5px;
 }
@@ -47,4 +46,9 @@ time {
 .containersection {
     width: 1118px;
     margin: auto;
+}
+
+p {
+    text-overflow: ellipsis;
+    text-align: left;
 }

@@ -20,7 +20,7 @@ function Eventscomponents({evenement, onOpenModal}) {
                       <p maxlength="4" dangerouslySetInnerHTML={{ __html: evenement.lead_text }}></p>
                       {/* dangerouslySetInnerHTML permet de retirer tous les caractères speciaux dans une chaine de caractère */}
                     <button className="buttonEvent"> <img className="cross" src={imgplus} height="10px" alt=""/> Ajouter en favoris</button>
-                    <button className="buttonEvent"> <img className="cross" src={imgmoins} height="10px" alt=""/> Retirer en favoris</button>
+                    <button className="buttonEvent"> <img className="cross" src={imgmoins} height="10px" alt=""/> Retirer des favoris</button>
                   </div>
             </div>
         </div>
